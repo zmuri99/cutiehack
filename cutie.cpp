@@ -45,7 +45,7 @@ bool file(BST* A) {
 int main() {
     printf("Cutie Hack personnel management version 1.0\n");
     printf("Current build supports the management of participant, volunteer, and mentor with varying permissions\n");
-    printf("The input will be gathered from a file consisting of the individuals first names, last names, id numbers, and status\n\n");
+    printf("The data will be gathered from a file consisting of the individuals first names, last names, id numbers, passwords, and status\n\n");
 
     BST *Tree = new BST();
 
@@ -85,7 +85,7 @@ int main() {
     cin >> name;
     cout << "PASSWPRD:" << p->getPassword() << endl << endl;
     if(name != p->getPassword()) {
-        printf("Not a valid password");
+        printf("Not a valid password\n");
         return 0;
     }
 
